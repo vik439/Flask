@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Welcome to the Flask Static and Media Files Demo</h2>
+    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+    <p><a href="{{ url_for('uploaded_file', filename='sample.pdf') }}">Download Sample PDF</a></p>
+{% endblock %}
